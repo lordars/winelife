@@ -33395,6 +33395,7 @@ var Product = function (props) {
     var trasnformNumero = Number(numero);
     console.log();
     var idProduct = _data__WEBPACK_IMPORTED_MODULE_5__["default"].productos[trasnformNumero];
+    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0), count = _a[0], setCount = _a[1];
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", null,
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "grid-container" },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PageHeader_index__WEBPACK_IMPORTED_MODULE_2__["default"], { title: "Products" }),
@@ -33445,6 +33446,12 @@ var Product = function (props) {
                                 "status:",
                                 idProduct.status,
                                 " "),
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null,
+                                    "Quantidade ",
+                                    count,
+                                    " "),
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: function () { setCount(count + 1); } })),
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null,
                                 "qtd:",
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, " "),

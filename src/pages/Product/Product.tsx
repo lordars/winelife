@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import './styles.css'
 import PagesHeader from '../../components/PageHeader/index'
 import Sidebar from "../../components/Sidebar/index";
@@ -21,6 +21,8 @@ const Product: React.FC <PropsType> = (props)=>{
   const trasnformNumero = Number(numero);
   console.log()
    const idProduct = data.productos[trasnformNumero]
+const [count, setCount] = useState(0)
+
     
 return(
    
@@ -62,6 +64,11 @@ return(
             <ul>
                 <li>price:<> </>  <b> ${idProduct.price}</b> </li>
                 <li>status:{idProduct.status} </li>
+
+                <div>
+                 <p>Quantidade {count} </p>
+                    <button onClick={()=>{setCount(count +1)}}></button>
+                </div>
                 <li >qtd:<> </>  
                     <select className="details-qtd">
                         <option>1 </option>
