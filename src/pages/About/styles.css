@@ -1,0 +1,9 @@
+.aboutContainer{
+    color: var(--color-button-text);
+}
+
+.logoBackContainer{
+    flex: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
